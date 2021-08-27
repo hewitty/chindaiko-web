@@ -1,7 +1,17 @@
 header{
-
+    display:block;
+    position: fixed;
+    font-size: large;
+    height: 10vh;
+    width:100vw;
+    top:0;
+    /* background-color: aliceblue; */
+}
+main{
+    display:block;
+    margin-top: 11vh;
 }
 
 footer{
-    
+    font-size:medium;
 }
