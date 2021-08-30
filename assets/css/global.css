@@ -12,8 +12,9 @@ header{
     height: 10%;
     width:100%;
     top:0;
-    /* background-color: aliceblue; */
-    background: linear-gradient(rgba(255,255,255,200),90%, rgba(255,255,255,0));
+    border-bottom: solid 4px purple;
+    background-color: white;
+    /* background: linear-gradient(rgba(255,255,255,200),90%, rgba(255,255,255,0)); */
 }
 
 #header-org-name{
