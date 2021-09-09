@@ -9,11 +9,6 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   repository_dispatch:
     types: [start-repo-disp-workflow]
-    inputs:
-      val1:
-        description: first value
-      val2:
-        description: second value
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
