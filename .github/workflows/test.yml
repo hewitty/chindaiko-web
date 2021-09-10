@@ -34,4 +34,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          git checkout event-resolution data_events.json
+          git checkout event-resolution js/data_events.json
