@@ -33,4 +33,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           git fetch
-          git checkout event_resolution assets/js/data_events.json
+          git checkout origin/event_resolution assets/js/data_events.json
