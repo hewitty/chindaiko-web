@@ -34,4 +34,4 @@ jobs:
         run: |
           git fetch
           git checkout main
-          git checkout --patch origin/event_resolution assets/js/data_events.json
+          git checkout --patch origin/event_resolution -- assets/js/data_events.json
