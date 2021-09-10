@@ -36,9 +36,12 @@ jobs:
           git checkout main
           git checkout --patch origin/event_resolution -- assets/js/data_events.json
           
-      - name: config
+      - name: config set name
         run:
           git config user.name "Github Actions Bot"
+          
+      - name: config set email
+        run: 
           git config user.email "<>"
           
       - name: committing
