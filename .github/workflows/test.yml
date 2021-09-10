@@ -37,5 +37,5 @@ jobs:
           git checkout --patch origin/event_resolution -- assets/js/data_events.json
           git config user.name "Github Actions Bot"
           git config user.email "<>"
-          git commit "hopefully updating everts.json"
+          git commit
           git push origin master
