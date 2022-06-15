@@ -1,7 +1,7 @@
 name: test3
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
     
 jobs:
   fetch:
