@@ -15,7 +15,7 @@ jobs:
         method: 'POST'
         bearerToken: ${{ secrets.NOTION_TOKEN}}
         customHeaders: '{"Notion-Version": "2021-08-16"}'
-        data: '{"sorts": "[{property: `time`, direction: `ascending`}]", "page_size": "1"}'
+        data: '{"sorts": [{property: `time`, direction: `ascending`}], "page_size": "1"}'
 
     - name: show response
       run: |
