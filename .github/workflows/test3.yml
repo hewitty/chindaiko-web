@@ -14,7 +14,7 @@ jobs:
         url: 'https://api.notion.com/v1/databases/6af2c5e769a6422488fdb001ded7e946/query'
         method: 'POST'
         bearerToken: ${{ secrets.NOTION_TOKEN}}
-        customHeaders: '{"Notion-Version": "2021-08-16"}'
+        customHeaders: '{"Notion-Version": "2021-08-16", Content-Type: "application/json"}'
         data: '{"sorts": [{property: `time`, direction: `ascending`}], "page_size": "1"}'
 
     - name: show response
