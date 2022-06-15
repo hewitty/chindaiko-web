@@ -2,7 +2,7 @@ name: test3
 
 on:
   workflow_dispatch:
-    
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
@@ -16,8 +16,8 @@ jobs:
         bearerToken: ${{ secrets.NOTION_TOKEN}}
         customHeaders: '{"Notion-Version": "2021-08-16"}'
         data: '{"sorts": "[{property: `time`, direction: `ascending`}]", "page_size": "1"}'
-       
-     - name: show response
-       run: |
+
+    - name: show response
+      run: |
         echo ${{ steps.request.outputs.response}}
         echo ${{ fromJson(steps.request.outputs.response)}}
