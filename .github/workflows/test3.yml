@@ -29,7 +29,7 @@ jobs:
     - name: process json file in repo, assign to env var
       id: set_old
       run: |
-        old = ${cat ./assets/js/data_events.json)
+        old = $(cat ./assets/js/data_events.json)
         old="${old//'%'/'%25'}"
         old="${old//$'\n'/'%0A'}"
         old="${old//$'\r'/'%0D'}"
