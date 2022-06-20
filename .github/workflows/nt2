@@ -1,0 +1,11 @@
+name: node-test2
+
+on:
+  workflow_dispatch:
+
+jobs:
+  setup:
+  - name: setup
+      runs:
+        using: 'node16'
+        main: 'runner.js'
