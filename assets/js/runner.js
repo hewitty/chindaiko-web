@@ -1,3 +1,3 @@
-const core = require('@actions/core');
 
-console.log('test');
+console.log('test log output');
+
