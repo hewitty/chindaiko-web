@@ -8,6 +8,6 @@ jobs:
   runs-on: ubuntu-latest
   steps:
   - name: setup
-  runs:
-    using: 'node16'
-    main: 'runner.js'
+    runs:
+      using: 'node16'
+      main: 'runner.js'
