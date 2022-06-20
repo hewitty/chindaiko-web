@@ -1,22 +1,47 @@
 {"events":[
     {
-        "id": 0,
-        "title":"a",
-        "date":"a",
-        "link":"a",
-        "map":"a"
+        "id": "",
+        "title": "",
+        "time": "",
+        "location": {
+            "address": "",
+            "mapLink": "",
+            "parking": "",
+            "parkingMapLink": "",
+        },
+        "ticketed": false,
+        "public": true,
+        "link": "",
+        "description": ""
     },
     {
-        "id": 1,
-        "title":"",
-        "date":"",
-        "link":"",
-        "map":""
-    },{
-        "id": 2,
-        "title":"",
-        "date":"",
-        "link":"",
-        "map":""
+        "id": "",
+        "title": "",
+        "time": "",
+        "location": {
+            "address": "",
+            "mapLink": "",
+            "parking": "",
+            "parkingMapLink": "",
+        },
+        "ticketed": false,
+        "public": true,
+        "link": "",
+        "description": ""
+    },
+    {
+        "id": "",
+        "title": "",
+        "time": "",
+        "location": {
+            "address": "",
+            "mapLink": "",
+            "parking": "",
+            "parkingMapLink": "",
+        },
+        "ticketed": false,
+        "public": true,
+        "link": "",
+        "description": ""
     }
 ]}
