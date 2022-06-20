@@ -7,10 +7,11 @@ jobs:
   setup:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - user: actions/setup-node@v2
+    - name: running
+      uses: actions/checkout@v3
+      uses: actions/setup-node@v2
       with:
         node-version: '16'
-    - run: |
+      run: |
         npm ci
         node runner
