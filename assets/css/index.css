@@ -8,7 +8,7 @@ header{
     /* border-bottom: solid 4px purple; */
     /* border: 0 0 3px 0!important; */
     border-style: solid;
-    border-image: url('../img/full_lowres.png') 100;
+    /* border-image: url('../img/full_lowres.png') 100; */
     border-image-width: 0 0 2.3em;
     background-color: white !important;
 
