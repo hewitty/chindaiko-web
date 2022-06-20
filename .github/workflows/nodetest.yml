@@ -2,7 +2,10 @@ name: node-test
 
 on:
   workflow_dispatch:
-  
-runs:
-  using: 'node16'
-  main: 'index.js'
+
+jobs:
+  setup:
+  - name: setup
+      runs:
+        using: 'node16'
+        main: 'index.js'
