@@ -2,12 +2,7 @@ name: node-test
 
 on:
   workflow_dispatch:
-
-jobs:
-  serup-node:
-  runs-on: ubuntu-latest
-  steps:
-  - name: setup
-    runs:
-      using: 'node16'
-      main: 'runner.js'
+  
+runs:
+  using: 'node16'
+  main: 'index.js'
