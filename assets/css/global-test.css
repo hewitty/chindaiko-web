@@ -1,0 +1,171 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+}
+html,body {
+    margin:0;
+    padding:0;
+    /* font-size: 62.5%; */
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img { 
+    border:0;
+}
+input{
+    border:1px solid #b0b0b0;
+    padding:3px 5px 4px;
+    color:#979797;
+    width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    /* font-size:100%; */
+    font-weight:normal;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { 
+    border:0;
+}
+
+/* global */
+
+@media (min-width: 768px) {
+    header{
+        height: 85px;
+    }
+    #header-accent-img{
+        height:85px;
+    }
+    main{
+        padding-top:85px;
+    }
+}
+
+@media  (max-width:767px) {
+    header{
+        height: 80px;
+    }
+    #header-accent-img{
+        height:80px;
+    }
+    main{
+        padding-top:80px;
+    }
+}
+
+/* header */
+header{
+    position:fixed;
+    /* height: 10%; */
+    background: linear-gradient(rgba(255,255,255,180),93%, rgba(255,255,255,0));
+    width:100%;
+    min-height: 60px;
+    padding-bottom: 10px;
+    /* border: 1px solid red; */
+    z-index: 100;
+}
+
+.title-container{
+    display: inline-flex;
+}
+#header-accent-img{
+    display:inline-block;
+    /* background-color: purple; */
+    /* width:10%; */
+    /* height:100%; */
+}
+
+
+
+#org-name2{
+    /* font-size: 2rem; */
+    display:inline-block;
+    height: inherit;
+    align-items:center;
+    padding-left: 0px;
+    vertical-align: middle;
+}
+
+nav{
+    /* border: 1px solid blue; */
+    text-align: right;
+}
+
+nav a{
+    color:black;
+    font-size:1.3rem;
+    text-decoration: none;
+    width: fit-content;
+    /* border: 1px solid blue; */
+    /* border-radius: 20px; */
+    /* float:right; */
+}
+
+nav a:hover{
+    color:gray;
+}
+
+nav a.active{
+    border-bottom: solid white 1px !important;
+}
+
+nav i{
+    font-size:2rem;
+    cursor: pointer;
+    /* border: 1px solid green; */
+}
+
+#menu-icon-container.active{
+    background-color: black;
+    color:white;
+}
+
+.nav-menu{
+    position: absolute;
+    right:0px;
+    top: 100%;
+    width: 120px;
+    background-color:white;
+    float:right;
+    /* box-shadow: 2px 2px 4px gray; */
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color:black !important;
+}
+
+/* main */
+main{
+    position: absolute;
+}
+
+#index-carousel{
+    height: 400px;
+    border: 1px solid blue;
+}
+/* footer */
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background-color: black;
+    color: white;
+}
