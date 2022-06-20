@@ -1,4 +1,4 @@
-name: node-test
+name: nodetest
 
 on:
   workflow_dispatch:
