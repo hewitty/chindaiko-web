@@ -8,12 +8,12 @@ let eventsfilepath= '/home/runner/work/chindaiko-web/chindaiko-web/assets/js/dat
 let fetchedEvents = [];
 console.log('test log output');
 
-// const notion = new Client({
-//     auth: process.env.NOTION_TOKEN,
-// });
 const notion = new Client({
-    auth: ${{ secrets.NOTION_TOKEN}},
+    auth: process.env.NOTION_TOKEN,
 });
+// const notion = new Client({
+//     auth: ${{ secrets.NOTION_TOKEN}},
+// });
 (async () => {
     const databaseId = '6af2c5e769a6422488fdb001ded7e946';
     const response = await notion.databases.query({
