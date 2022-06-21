@@ -16,4 +16,5 @@ fs.readFile('/home/runner/work/chindaiko-web/chindaiko-web/assets/js/data_events
         return;
     }
     console.log(data);
+    
 })
