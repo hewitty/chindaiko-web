@@ -8,9 +8,9 @@ let eventsfilepath= '/home/runner/work/chindaiko-web/chindaiko-web/assets/js/dat
 let fetchedEvents = [];
 console.log('test log output');
 
-const notion = new Client({
-    auth: process.env.NOTION_TOKEN,
-});
+// const notion = new Client({
+//     auth: process.env.NOTION_TOKEN,
+// });
 const notion = new Client({
     auth: ${{ secrets.NOTION_TOKEN}},
 });
