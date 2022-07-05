@@ -28,3 +28,8 @@ jobs:
       run: |
         npm ci
         node assets/js/runner.js
+        
+    - name: test
+      run: |
+        echo "output is ${{ steps.execute.outputs.updatedEvents }}"
+     
