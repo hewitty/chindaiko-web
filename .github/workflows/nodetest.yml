@@ -19,6 +19,8 @@ jobs:
       env:
         CI: true
         NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        FILEPATH: ${{ secrets.FILEPATH }}
+        EVENTS_DBID: ${{ secrets.EVENTS_DBID }}
       run: |
         npm ci
         node assets/js/runner.js
