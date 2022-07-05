@@ -21,7 +21,7 @@ async function main(){
 
     await fs.promises.writeFile( process.env.FILEPATH, JSON.stringify(eventFile) );
 
-    core.setOutput('updatedEvents', Object,keys(fetchedEvents).length);
+    core.setOutput('updatedEvents', Object.keys(fetchedEvents).length);
 }
 
 main();
