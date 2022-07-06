@@ -6,6 +6,7 @@ require('dotenv').config({path: '../../.env'});
 const notion = new Client({auth: process.env.NOTION_TOKEN});
 
 async function main(){
+    var output = {runtime: null, addedEvents:[]};
     var fetchedEvents = {};
     //read event file from repo
     let eventFile = JSON.parse( await fs.promises.readFile( process.env.FILEPATH ) );
@@ -16,12 +17,14 @@ async function main(){
 
     for(var event of Object.values(fetchedEvents)){
         eventFile.events[event.id] = event;
+        output.addedEvents.push(event);
     }
     eventFile.last_edited_time = new Date().toISOString();
-
+    output.runtime = eventFile.last_edited_time;
+    
     await fs.promises.writeFile( process.env.FILEPATH, JSON.stringify(eventFile) );
 
-    core.setOutput('updatedEvents', Object.keys(fetchedEvents).length);
+    core.setOutput('output:', output);
 }
 
 main();
