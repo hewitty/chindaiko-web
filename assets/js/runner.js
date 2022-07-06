@@ -21,10 +21,10 @@ async function main(){
     }
     eventFile.last_edited_time = new Date().toISOString();
     output.runtime = eventFile.last_edited_time;
-    
+
     await fs.promises.writeFile( process.env.FILEPATH, JSON.stringify(eventFile) );
 
-    core.setOutput('output:', output);
+    core.setOutput('eventFileChange', output);
 }
 
 main();
