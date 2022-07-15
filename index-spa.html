@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>spa test page</title>
     <link rel="shortcut icon" href="assets/img/favicon.ico">
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/index.js" defer></script>
     <script src="assets/js/global.js" defer></script>
+    <script src="assets/js/router.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="assets/css/global-test.css" rel="stylesheet">
@@ -25,10 +26,10 @@
         </div>
         <nav class="col-md-6 d-none d-md-block p-0 pr-2 pb-2 align-self-end justify-content-right">
             <!-- <div class="m-0 justify-content-right"> -->
-                <a href="groups.html" class="mx-2">Groups</a>
-                <a href="events.html" class="mx-2">Events</a>
-                <a href="faq.html" class="mx-2">FAQ</a>
-                <a href="contactus.html" class="mx-2 text-nowrap">Contact us</a>
+                <a href="/groups" class="mx-2" data-link>Groups</a>
+                <a href="/events" class="mx-2" data-link>Events</a>
+                <a href="/faq" class="mx-2" data-link>FAQ</a>
+                <a href="/contactus" class="mx-2 text-nowrap" data-link>Contact us</a>
             <!-- </div> -->
         </nav>
         <nav id="menu-icon-container" class="col-1 d-md-none p-0 d-flex justify-content-center">
@@ -36,13 +37,13 @@
           
         </nav>
         <ul class="nav-menu collapsed d-none">
-          <li class="m-1"><a href="groups.html">Groups</a></li>
-          <li class="m-1"><a href="events.html">Events</a></li>
-          <li class="m-1"><a href="faq.html">FAQ</a></li>
-          <li class="m-1"><a href="contactus.html">Contact us</a></li>
+          <li class="m-1"><a href="/groups" data-link>Groups</a></li>
+          <li class="m-1"><a href="/events" data-link>Events</a></li>
+          <li class="m-1"><a href="/faq" data-link>FAQ</a></li>
+          <li class="m-1"><a href="/contactus" data-link>Contact us</a></li>
         </ul>
     </header>
-    <main class="row m-0">
+    <main id="main-index" class="row m-0">
       <div id='index-carousel' class='col-12'></div>
       <div id="index-motto fs-2" class="col-12 p-0">Peace Through Understanding Each Others' Culture.</div>
       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloremque dignissimos praesentium quidem, tenetur perspiciatis impedit facere, sequi ratione suscipit consequatur ducimus quisquam, atque beatae fuga doloribus harum eos et?</h1>
@@ -73,6 +74,18 @@
   
       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloremque dignissimos praesentium quidem, tenetur perspiciatis impedit facere, sequi ratione suscipit consequatur ducimus quisquam, atque beatae fuga doloribus harum eos et?</h1>
   
+    </main>
+    <main id="main-events" class="row m-0 dn">
+        <h1>EVENTS</h1>
+    </main>
+    <main id="main-groups" class="row m-0 dn">
+        <h1>GROUPS</h1>
+    </main>
+    <main id="main-faq" class="row m-0 dn">
+        <h1>FAQ</h1>
+    </main>    
+    <main id="main-contactus" class="row m-0 dn">
+        <h1>CONTACT US</h1>
     </main>
     <footer class="row m-0">
       <div class="col-4">Chin Hamaya Daiko</div>

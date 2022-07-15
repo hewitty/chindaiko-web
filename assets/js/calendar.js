@@ -12,29 +12,28 @@ Date.prototype.padD = function() {
 }
 
 function render(d){
-	console.time('render2')
+	console.time('render')
   const first = new Date(d.getFullYear(), d.getMonth(),1);
   const fDay = first.getDay();
-  const cells = document.getElementsByClassName('cell');
-  for(let i=0; i<42; i++){
-  	let date = new Date(d.getFullYear(), d.getMonth(), i-fDay+1);
+  const cells = Array.prototype.slice.call(document.getElementsByClassName('cell'));
+  cells.forEach(function(cell,i){
+    let date = new Date(d.getFullYear(), d.getMonth(), i-fDay+1);
     if(date.getMonth() !== d.getMonth()){
-    	cells[i].classList.add('filler')
+    	cell.classList.add('filler')
     }else{
-    	cells[i].classList.remove('filler');
+    	cell.classList.remove('filler');
     }
-    cells[i].innerText = date.getDate();
-    cells[i].dataset.date= `${date.getFullYear()}-${date.padM()}-${date.padD()}`
-  }
+    cell.innerText = date.getDate();
+    cell.dataset.date= `${date.getFullYear()}-${date.padM()}-${date.padD()}`
+  });
   if(cells[35].classList.contains('filler')){
-    [].forEach.call(document.getElementsByClassName('cell last-row'), function (cell) {cell.classList.add('dn')});
+    Array.prototype.slice.call(document.getElementsByClassName('cell last-row'), function(cell){cell.classList.add('dn')});
   }else{
-    [].forEach.call(document.getElementsByClassName('cell last-row'), function (cell) {cell.classList.remove('dn')});
+     Array.prototype.slice.call(document.getElementsByClassName('cell last-row'), function(cell){cell.classList.remove('dn')});
   }
   document.getElementById('current-month').innerText = (`${new Intl.DateTimeFormat('en-US', {month: 'long'}).format(d)} ${d.getFullYear()}`);
-  console.timeEnd('render2')
+  console.timeEnd('render')
 }
-
 
 console.log(`today is ${new Date()}`)
 render(new Date());
